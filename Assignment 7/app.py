@@ -11,10 +11,10 @@ IMG_SIZE = (112, 112)
 # Load your model
 @st.cache_resource
 def load_yoga_model():
-    model = load_model("yoga_pose_model.keras")  # Already correctly named
+    model = load_model("yoga_pose_model.keras")  
     return model
 
-# Define label map (ensure it matches your training labels)
+# Define label map 
 label_map = {
     0: 'downdog',
     1: 'goddess',
